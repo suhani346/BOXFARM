@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+          <style>
+           
+                #login{
+                    box-sizing: border-box;
+                    justify-content: center;
+                    text-align: center;
+                    border:2px solid orange;
+                    border-radius: 5px;
+                    padding:3%;
+                    
+                }
+
+               
+                h2{
+                    font-family:fantasy;
+                    font-size: 50px;
+                }
+                label{
+                    justify-content: center;
+                    text-align:center;
+                    color:darkorange;
+                    font-size: 30px;
+                    font-family:'Times New Roman', Times, serif;
+                }
+
+                input{
+                    width:80%;
+                    height:35%;
+                    border:2px solid rgb(4, 238, 4);
+                    background-color: chartreuse;
+                    border-radius:5px;
+                }
+
+                button{
+                    margin-top:5%;
+                    margin-bottom:5%;
+                    width:50%
+                    
+
+                }
+
+
+             body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+        
+            display: flex;
+           justify-content: center; /* Horizontal center */
+            align-items: center;  
+            background: white;
+            width:100%;
+            height:100%;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+         
+        .card1{
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            border:2px solid black;
+            border-radius:10px;
+            width:50%;
+            
+
+         } 
+       
+
+        #profileImage {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #198754;
+            
+        }
+
+        input[type="file"] {
+            width: 10%;
+            height:5%;
+        }
+
+        #button {
+            background: #198754;
+            color: white;
+            border: none;
+            padding: 10px;
+            width:20%;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #146c43;
+        }
+    
+
+
+          
+          </style>
+</head>
+<body >
+    <!---heading and name-->
+       <!--navbar section-->
+   <div class="container-fluide">
+     <div class="row">
+        <div class="col-m-12">
+            <!--navbar start-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="#">
+                     <i class="fa-solid fw-bold fa-plane-departure px-100"></i>FARMBIGG
+                    </a>   
+                
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                   </button>
+     
+
+                 <div class="collapse navbar-collapse" id="menu">
+                      <ul class="navbar-nav ms-auto">
+                           <li class="nav-item  fw-bold" ><a class="nav-link active" href="index.html">Home</a></li>
+                           <li class="nav-item fw-bold"><a class="nav-link " href="home.html">menu</a></li>
+                           <li class="nav-item fw-bold"><a class="nav-link " href="contact.html">Contact</a></li>
+                           <li class="nav-item fw-bold"><a class="nav-link " href="about.html">About</a></li>
+                           
+                        </ul>
+                     </div>
+                     <a href="login.html" class="btn btn-success ms-lg-3 fw-bold">Login</a>
+                       <a href="logout.html" class="btn btn-success ms-lg-3 fw-bold">SignUP</a>
+                    
+                    </div>
+                </div>
+            </nav>
+     
+
+         <div id="card" class="col-12">
+                     <div class="card">
+                        <div class="card1">
+                           <h3 class="head fw-bold">YOUR PROFILE</h3>
+                           
+                                     <img id="profileImage" src="https://placehold.co/130x130?text=Profile" alt="Profile Image" >
+
+                                   <br>
+                                     <label for="imageUpload">Choose Profile Image</label>
+                                     <input type="file" id="imageUpload" accept="image/*" >
+
+                                     <p id="message"></p>
+
+                                     <button id="button" onclick="uploadImage()">Upload Image</button>
+                                    <li>
+                                    <h3 style="text-align: center;"><b>Name: </b><span id="name"></span></h3>
+                                    <h3 style="text-align: center;"><b>Email:</b> <span id="email"></span></h3>
+                                    <h3 style="text-align: center;"><b>Phone:</b> <span id="phone"></span></h3>
+                                   </li>
+                         </div>
+                     </div>
+                </div>
+       
+
+
+
+
+ 
+
+
+    <footer class="bg-warning text-white text-center py-3">
+    
+    
+    <div class="text-center m-5">
+       <h4>🌿 FARMBIGG</h4>
+    <p class="mb-1">Growing Together, Building a Greener Future.</p>
+    <p class="mb-0">&copy; 2026 FARMBIGG. All rights reserved.</p>
+     <a class="nav-link mb-3 hov" aria-current="page" href="#">
+        <i class="bi bi-arrow-up-circle"></i>
+     </a>
+
+     <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Home</a>
+        </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Menu</a>
+        </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">About</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Contact</a>
+        </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Help Me</a>
+        </li>
+     </ul>
+
+
+
+
+     <h5>-----------------------------FARMBIGG------------------------------</h5>
+    </div>
+
+
+
+
+
+
+    <p class="mb-0" fw-40>@2026 FARMBIGG Shopping App  |  Designed with Bootstrap</p>
+</footer>
+</div>
+ </div>
+        
+    
+
+
+
+
+
+  <script>
+        function uploadImage() {
+            const input = document.getElementById("imageUpload");
+            const message = document.getElementById("message");
+
+            if (input.files.length === 0) {
+                message.textContent = "Please select an image first!";
+                return;
+            }
+
+            const file = input.files[0];
+
+            if (!file.type.startsWith("image/")) {
+                message.textContent = "Please select a valid image.";
+                return;
+            }
+
+            const imageURL = URL.createObjectURL(file);
+
+            document.getElementById("profileImage").src = imageURL;
+            message.textContent = "Profile image uploaded successfully!";
+        }
+
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("name").textContent =
+      params.get("name") || "";
+
+    document.getElementById("email").textContent =
+      params.get("email") || "";
+
+    document.getElementById("phone").textContent =
+      params.get("phone") || "";
+  
+    </script>
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

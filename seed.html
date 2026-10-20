@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+          
+            <style>
+            .card{
+                 background-color: white;
+                 padding: 30px 20px;
+                 border-radius: 15px;
+                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+                 height: 100%;
+                 transition: 0.3s;
+            }
+
+
+            /* Hover Effect */
+          .card:hover {
+           transform: translateY(-8px);
+           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+           }
+
+
+           .btn1{
+                    margin-top:5%;
+                    margin-bottom:5%;
+                    width:50%;
+                    border:5px solid orange;
+                    border-radius:20%;
+                    background-color: darkorange;
+                    
+                }
+          
+          </style>
+</head>
+<body >
+    <!---heading and name-->
+       <!--navbar section-->
+   <div class="container-fluide">
+     <div class="row">
+        <div class="col-m-12">
+            <!--navbar start-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+                <div class="container">
+                    <a class="navbar-brand fw-bold" href="#">
+                     <i class="fa-solid fw-bold fa-plane-departure px-100"></i>FARMBIGG
+                    </a>   
+                
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                   </button>
+     
+
+                 <div class="collapse navbar-collapse" id="menu">
+                      <ul class="navbar-nav ms-auto">
+                           <li class="nav-item  fw-bold" ><a class="nav-link active" href="index.html">Home</a></li>
+                           <li class="nav-item fw-bold"><a class="nav-link " href="home.html">menu</a></li>
+                           <li class="nav-item fw-bold"><a class="nav-link " href="contact.html">Contact</a></li>
+                           <li class="nav-item fw-bold"><a class="nav-link " href="about.html">About</a></li>
+                           
+                        </ul>
+                     </div>
+                     <a href="login.html" class="btn btn-success ms-lg-3 fw-bold">Login</a>
+                       <a href="logout.html" class="btn btn-success ms-lg-3 fw-bold">SignUP</a>
+                    
+                    </div>
+                </div>
+            </nav>
+      </div><!--navbar end-->
+     <!-- navbar box end-->
+    </div> 
+
+
+
+
+
+<!---card creations-->
+
+<div class="containert-fluide">
+ <div class ="row">
+   <div clss="col-md-12">
+       
+    <!--servicce section-->
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4">ALL TYPE OF CROPS AND GRAINS</h2>
+
+            <h3 class="text-center fw-bold mb-4">Grains and cereals</h3>
+            <div class="row text-center">
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\wheat.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">wheat</h4>
+                     <h5 class="fw-bold">100Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/wheat.jpg','wheat','100 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                 <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\jawar.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Jowar</h4>
+                     <h5 class="fw-bold">180Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/jawar.jpg','Jowar','180 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\bajara.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Bajara</h4>
+                     <h5 class="fw-bold">280Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/bajara.jpg','Bajara','280 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\rice.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Rice</h4>
+                     <h5 class="fw-bold">80Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/rice.jpg','Rice','80 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+                
+
+                
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\maize.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Maize</h4>
+                     <h5 class="fw-bold">90Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/maize.jpg','Maize','90 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\barely.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Baley</h4>
+                     <h5 class="fw-bold">95Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/barely.jpg','Baley','95 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                 <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\ragi.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Ragi</h4>
+                     <h5 class="fw-bold">95Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/ragi.jpg','Ragi','95 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+                 <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\ragi.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Ragi</h4>
+                     <h5 class="fw-bold">95Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/ragi.jpg','Ragi','95 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+                <h3 class="text-center fw-bold mb-4"> Pulses and legumes</h3>
+
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\tur.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Toor dal</h4>
+                     <h5 class="fw-bold">180Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/tur.jpg','Toor dal','180 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\mug.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Moong dal</h4>
+                     <h5 class="fw-bold">200Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/mug.jpg','Moong dal','200 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\chana.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Chickpeas</h4>
+                     <h5 class="fw-bold">280Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/chana.jpg','Chickpeas','280 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                 <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\masur.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Masoor dal</h4>
+                     <h5 class="fw-bold">210Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/masur.jpg','Masoor dal','210 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+                 
+                <h3 class="text-center fw-bold mb-4">  Cash crops and oilseeds</h3>
+                
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\cotton.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">cotton</h4>
+                     <h5 class="fw-bold">250Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/cotton.jpg','cotton','250 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\sugarcane.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">SugarCane</h4>
+                     <h5 class="fw-bold">250Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/sugarcane.jpg','SugarCane','250 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+
+                 <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\mustard.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Mustard</h4>
+                     <h5 class="fw-bold">250Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/mustard.jpg','Mustard','250 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                 <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\soyabean.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Soyabean</h4>
+                     <h5 class="fw-bold">250Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/soyabean.jpg','Soyabean','250 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+                 <h3 class="text-center fw-bold mb-4"> Popular vegetables</h3>
+                
+
+                 <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\tomato.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Tomato</h4>
+                     <h5 class="fw-bold">60Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/tomato.jpg','Tomato','60 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\onion.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Onion</h4>
+                     <h5 class="fw-bold">80Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "
+                    type="button"
+                     onclick="buyNow('images/onion.jpg','Onion','80 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\okra.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Okra</h4>
+                     <h5 class="fw-bold">50Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/okra.jpg','Okra','50 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                    <i class="fa-solid fa-plane fa-3x text-primary mb-3"></i>
+                    <img src="images\potato.jpg" height="300px" width="215px">
+                     <h4 class="fw-bold">Potato</h4>
+                     <h5 class="fw-bold">60Rs. per kg</h5>
+                    </img>
+                    <button class="btn btn-primary "type="button"
+                     onclick="buyNow('images/potato.jpg','Potato','60 Rs.')">
+                     Buy Now
+                    </button>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+    </div>
+   </div>
+</div>
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+<!---footer starting-->
+    <footer class="bg-warning text-white text-center py-3">
+    
+    
+    <div class="text-center m-5">
+      <h4>🌿 FARMBIGG</h4>
+    <p class="mb-1">Growing Together, Building a Greener Future.</p>
+    <p class="mb-0">&copy; 2026 FARMBIGG. All rights reserved.</p>
+     <a class="nav-link mb-3 hov" aria-current="page" href="#">
+        <i class="bi bi-arrow-up-circle"></i>
+     </a>
+
+     <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Home</a>
+        </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Menu</a>
+        </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">About</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Contact</a>
+        </li>
+
+         <li class="nav-item">
+            <a class="nav-link text-white hov fw-bold" href="#">Help Me</a>
+        </li>
+     </ul>
+
+
+
+
+     <h5>-----------------------------FARMBIGG------------------------------</h5>
+    </div>
+
+
+
+
+
+
+    <p class="mb-0" fw-40>@2026 FARMBIGG Shopping App  |  Designed with Bootstrap</p>
+</footer>
+
+
+
+
+
+
+
+
+
+<!---reuseable modal-->
+
+    <div class="modal fade" id="confirmModal" tabindex="-1"
+     aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Your Order</h5>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body text-center">
+                <img id="modalImg" src="" alt="Selected product"
+                     class="img-fluid mb-3"
+                     style="max-height:200px">
+
+                <h4 id="modalName"></h4>
+                <h5 id="modalPrice" class="text-success"></h5>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Cancel
+                </button>
+
+                <button type="button" class="btn btn-success"
+                        onclick="confirmOrder()">
+                    Confirm Order
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+<script>
+let selectedProduct = {};
+
+function buyNow(img, name, price) {
+    selectedProduct = { img, name, price };
+
+    document.getElementById("modalImg").src = img;
+    document.getElementById("modalName").textContent = name;
+    document.getElementById("modalPrice").textContent = price;
+
+    const modalElement = document.getElementById("confirmModal");
+    bootstrap.Modal.getOrCreateInstance(modalElement).show();
+}
+
+function confirmOrder() {
+    if (!selectedProduct.name) {
+        alert("Please select a product first!");
+        return;
+    }
+
+    const params = new URLSearchParams({
+        name: selectedProduct.name,
+        price: selectedProduct.price,
+        img: selectedProduct.img
+    });
+
+    window.location.href = "order.html?" + params.toString();
+}
+</script>
+
+
+   
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
